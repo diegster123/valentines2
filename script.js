@@ -56,7 +56,7 @@ messageForm.addEventListener("submit", async (e) => {
 });
 
 replayBtn.addEventListener("click", () => {
-	window.location.href = "index.html";
+	window.location.href = "/valentines2/index.html";
 });
 
 popup.addEventListener("click", (e) => {
@@ -64,5 +64,3 @@ popup.addEventListener("click", (e) => {
 		popup.style.display = "none";
 	}
 });
-
-//happy valentines
