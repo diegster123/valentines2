@@ -6,8 +6,8 @@ const replayBtn = document.getElementById("replay-btn");
 
 function nextPage() {
 	if (window.location.pathname.endsWith("index.html")) {
-		window.location.href = "pages/question.html";
-	} else if (window.location.pathname.endsWith("pages/question.html")) {
+		window.location.href = "question.html";
+	} else if (window.location.pathname.endsWith("question.html")) {
 		window.location.href = "valentine.html";
 	}
 }
