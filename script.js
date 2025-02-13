@@ -1,11 +1,9 @@
-// Get elements
 const yesBtn = document.getElementById("yes-btn");
 const noBtn = document.getElementById("no-btn");
 const popup = document.getElementById("popup");
 const messageForm = document.getElementById("message-form");
 const replayBtn = document.getElementById("replay-btn");
 
-// Function to navigate to the next page
 function nextPage() {
 	if (window.location.pathname.endsWith("index.html")) {
 		window.location.href = "pages/question.html";
@@ -14,12 +12,10 @@ function nextPage() {
 	}
 }
 
-// Show popup when "Yes" is clicked
 yesBtn.addEventListener("click", () => {
 	popup.style.display = "flex";
 });
 
-// Move the "No" button randomly on hover or click
 noBtn.addEventListener("mouseover", moveButton);
 noBtn.addEventListener("click", moveButton);
 
@@ -58,12 +54,10 @@ messageForm.addEventListener("submit", async (e) => {
 	}
 });
 
-// Handle replay button click
 replayBtn.addEventListener("click", () => {
-	window.location.href = "../pages/index.html"; // Redirect to landing page
+	window.location.href = "../pages/index.html";
 });
 
-// Close popup when clicking outside of it
 popup.addEventListener("click", (e) => {
 	if (e.target === popup) {
 		popup.style.display = "none";
