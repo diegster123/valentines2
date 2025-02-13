@@ -5,9 +5,10 @@ const messageForm = document.getElementById("message-form");
 const replayBtn = document.getElementById("replay-btn");
 
 function nextPage() {
-	if (window.location.pathname.endsWith("index.html")) {
+	const path = window.location.pathname;
+	if (path.endsWith("/") || path.endsWith("index.html")) {
 		window.location.href = "question.html";
-	} else if (window.location.pathname.endsWith("question.html")) {
+	} else if (path.endsWith("question.html")) {
 		window.location.href = "valentine.html";
 	}
 }
